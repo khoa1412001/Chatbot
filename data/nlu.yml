@@ -1,0 +1,22 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - xin chào
+      - hi
+      - hello
+      - trợ giúp
+
+  - intent: goodbye
+    examples: |
+      - tạm biệt
+
+  - intent: question
+    examples: |
+      - làm sao để thuê xe
+      - thuê xe
+
+  - intent: question_owner
+    examples: |
+      - làm sao để cho thuê xe

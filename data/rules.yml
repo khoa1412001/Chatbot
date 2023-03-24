@@ -1,0 +1,22 @@
+version: "3.1"
+
+rules:
+  - rule: Chào hỏi
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Tạm biệt
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Thắc mắc
+    steps:
+      - intent: question
+      - action: utter_question
+
+  - rule: Thắc mắc cho thuê xe
+    steps:
+      - intent: question_owner
+      - action: utter_question_owner
