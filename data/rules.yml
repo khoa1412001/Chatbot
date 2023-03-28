@@ -16,7 +16,27 @@ rules:
       - intent: question
       - action: utter_question
 
+  - rule: Xác thực
+    steps:
+      - intent: verify
+      - action: utter_verify
+
   - rule: Thắc mắc cho thuê xe
     steps:
       - intent: question_owner
       - action: utter_question_owner
+
+  - rule: In hợp đồng thuê xe
+    steps:
+      - intent: contract
+      - action: utter_contract
+  
+  - rule: Gửi đánh giá xe
+    steps:
+      - intent: send_rating
+      - action: utter_send_rating
+  
+  - rule: Quản lý xe
+    steps:
+      - intent: car_manage
+      - action: utter_car_manage

@@ -7,16 +7,52 @@ nlu:
       - hi
       - hello
       - trợ giúp
+      - tôi cần trợ giúp
+      - mình cần sự trợ giúp
 
   - intent: goodbye
     examples: |
       - tạm biệt
+      - chào tạm biệt
 
   - intent: question
     examples: |
       - làm sao để thuê xe
       - thuê xe
+      - tôi muốn thuê xe
+      - tôi cần thuê xe
+  
+  - intent: verify
+    examples: |
+      - xác thực tài khoản
+      - tôi muốn xác thực tài khoản
+      - tôi cần xác thực tài khoản
+      - làm sao để xác thực tài khoản
+
+  - intent: contract
+    examples: |
+      - tôi muốn lấy hợp động thuê xe
+      - tôi cần hợp đồng thuê xe
+      - tôi muốn in hộp đồng thuê xe
+      - làm sao để lấy hợp đồng thuê xe
 
   - intent: question_owner
     examples: |
       - làm sao để cho thuê xe
+      - làm sao để chở thành chủ xe
+      - tôi muốn cho thuê xe
+      - tôi muốn đăng ký xe lên hệ thống
+
+  - intent: send_rating
+    examples: |
+      - đánh giá
+      - tôi muốn gửi đánh giá xe
+      - tôi muốn đánh giá xe
+      - tôi cần đánh giá xe
+  
+  - intent: car_manage
+    examples: |
+      - đánh giá
+      - tôi muốn gửi đánh giá xe
+      - tôi muốn đánh giá xe
+      - tôi cần đánh giá xe
