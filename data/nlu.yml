@@ -52,7 +52,7 @@ nlu:
   
   - intent: car_manage
     examples: |
-      - đánh giá
-      - tôi muốn gửi đánh giá xe
-      - tôi muốn đánh giá xe
-      - tôi cần đánh giá xe
+      - quản lý xe
+      - tôi muốn quản lý xe của mình đã đăng ký trên hệ thống
+      - tôi cần quản lý xe của mình
+      - làm sao để quản lý xe đã đăng ký trên hệ thống

@@ -5,6 +5,10 @@ intents:
   - goodbye
   - question
   - question_owner
+  - contract
+  - send_rating
+  - car_manage
+  - verify
 
 responses:
   utter_greet:
