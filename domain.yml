@@ -9,13 +9,14 @@ intents:
   - send_rating
   - car_manage
   - verify
+  - car_recommendation
 
 responses:
   utter_greet:
     - text: "Xin chào! Nếu cần sự trợ giúp hãy đặt ra các câu hỏi, mình sẽ trợ giúp hết mình"
 
   utter_question:
-    - text: "Để thuê xe, bạn cần có tài khoản, để tạo tài khoản truy cập vào trang https://fe-easycar.vercel.app/signup và xác thực tài khoản ở đường dẫn sau https://fe-easycar.vercel.app/profile/verify , bạn cần có bằng lái xe để thực hiện xác thực tài khoản"
+    - text: "Để thuê xe, bạn cần có tài khoản, để tạo tài khoản truy cập vào trang https://fe-easycar.vercel.app/signup và xác thực tài khoản ở đường dẫn sau https://fe-easycar.vercel.app/profile/verify , bạn cần có bằng lái xe để thực hiện xác thực tài khoản, hệ thống có chức năng gợi ý xe dựa trên yêu cầu của bạn để biết thêm chi tiết hãy hỏi 'Tôi muốn được gợi ý'"
 
   utter_question_owner:
     - text: "Để trở thành chủ xe, bạn cần có tài khoản hãy đăng ký tài khoản ở trang https://fe-easycar.vercel.app/signup, sau khi có tài khoản hãy đăng nhập vào tài khoản và truy cập vào đường dẫn sau https://fe-easycar.vercel.app/car-signup và điền các thông tin cần thiết"
@@ -34,6 +35,9 @@ responses:
 
   utter_car_manage:
     - text: "Để quản lý xe, bạn cần phải đăng ký xe lên hệ thống, truy cập vào https://fe-easycar.vercel.app/profile/carmanage , bạn có thể quản lý các xe bạn đã đăng ký lên hệ thống, cập nhật trạng thái, tạm dừng hay tiếp tục cho thuê xe, xóa xe ra khỏi hệ thống"
+  
+  utter_car_recommedation:
+    - text: "Để được gọi ý xe cho thuê hãy soạn câu hỏi dựa trên cấu trúc sau \n '(Số tiền thấp nhất) - (Số tiền lớn nhất), (ngày bắt đầu) - (ngày kết thúc), (số ghế), (loại truyền động)'. \n - Số tiền có đơn vị là nghìn. \n - Ngày dựa trên format dd/mm/yyyy. \n - Số ghế hợp lệ là 4, 5, 7. \n - Loại truyền động là AUTO cho xe số tự động và MANUAL cho xe số. \n - Câu gợi ý mẫu '500 - 1000, 24/02/2023 - 25/02/2023, 4, AUTO'."
 
 
 session_config:

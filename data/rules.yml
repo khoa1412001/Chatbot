@@ -40,3 +40,8 @@ rules:
     steps:
       - intent: car_manage
       - action: utter_car_manage
+
+  - rule: Gợi ý xe
+    steps:
+      - intent: car_recommendation
+      - action: utter_car_recommedation
