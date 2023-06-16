@@ -11,4 +11,4 @@ USER 1001
 
 ENTRYPOINT [ "rasa" ]
 
-CMD ["run", "--enable-api, "--cors "*""]
+CMD ["run", "--enable-api", "--cors", "\"*\""]
